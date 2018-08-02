@@ -1,5 +1,5 @@
 {
-    "name": "wechat-access-middleware",
+    "name": "express-wechat-access",
     "version": "0.0.1",
     "description": "",
     "main": "./dist/index.js",
@@ -12,7 +12,7 @@
         "type": "git",
         "url": "git@github.com:simmons8616/express-wechat-access.git"
     },
-    "author": "zhangwenxi",
+    "author": "simmons8616",
     "license": "MIT",
     "dependencies": {
         "@types/async": "^2.0.49",
