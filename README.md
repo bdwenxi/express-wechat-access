@@ -1,2 +1,3 @@
-# express-wechat-access
-A wechat access middleware for expressjs
+# wechat-access-middleware
+
+基于express的微信鉴权中间件
