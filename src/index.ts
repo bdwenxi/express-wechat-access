@@ -1,6 +1,6 @@
 /**
  * @file 微信鉴权中间件
- * @author zhangwenxi(zhangwenxi@baidu.com)
+ * @author simmons8616(simmons0616@gmail.com)
  */
 
 import {EventEmitter} from 'events';

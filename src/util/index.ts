@@ -1,6 +1,6 @@
 /**
  * @file 微信鉴权工具类文件
- * @author zhangwenxi(zhangwenxi@baidu.com)
+ * @author simmons8616(simmons0616@gmail.com)
  */
 
 // 引入NodeJs基础模块

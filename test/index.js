@@ -1,6 +1,6 @@
 /**
  * @file 测试入口文件
- * @author zhangwenxi(zhangwenxi@baidu.com)
+ * @author simmons8616(simmons0616@gmail.com)
  */
 
 const path = require('path');

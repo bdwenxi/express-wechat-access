@@ -1,6 +1,6 @@
 /**
  * @file 请求api接口文件
- * @author zhangwenxi(zhangwenxi@baidu.com)
+ * @author simmons8616(simmons0616@gmail.com)
  */
 
 import * as request from 'superagent';

@@ -1,6 +1,6 @@
 /**
  * @file 微信鉴权服务模块
- * @author zhangwenxi(zhangwenxi@baidu.com)
+ * @author simmons8616(simmons0616@gmail.com)
  */
 
 // 引入第三方模块
