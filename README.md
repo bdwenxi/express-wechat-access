@@ -116,9 +116,9 @@ app.use(
     weAccessMiddleware(
         {
             // 根据自己申请的微信平台账号的appId填入
-            appId: 'wx46cefb4ba1541c71',
+            appId: 'xxxxxxxx',
             // 根据自己申请的微信平台账号的appSecret填入
-            appSecret: '6d65bdf7cebcf28fb9434fc15c6ebdbc',
+            appSecret: 'xxxxxxxxxxxxxxx',
             // 默认的获取access_token的地址
             accessTokenUrl: 'https://api.weixin.qq.com/cgi-bin/token',
             // 默认的获取ticket门票的地址
@@ -194,6 +194,16 @@ app.listen(8886);
 
 * 默认值：https://api.weixin.qq.com/cgi-bin/ticket/getticket
 
-#### errorHandler
+##### https
+
+* 描述：当前url的协议protocol
+
+* 类型：boolean
+
+* 是否必须：否
+
+* 默认值：false
+
+### errorHandler
 
 ``` function errorHandler(e) {} ``` 错误处理函数，接收一个Error实例作为参数

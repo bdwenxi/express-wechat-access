@@ -151,5 +151,5 @@ $RECYCLE.BIN/
 .idea/
 dist/
 yarn.lock
-
+publish.sh
 .rpt2_cache
