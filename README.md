@@ -204,6 +204,6 @@ app.listen(8886);
 
 * 默认值：false
 
-### errorHandler
+#### errorHandler
 
 ``` function errorHandler(e) {} ``` 错误处理函数，接收一个Error实例作为参数
