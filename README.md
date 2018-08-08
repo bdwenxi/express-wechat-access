@@ -122,7 +122,9 @@ app.use(
             // 默认的获取access_token的地址
             accessTokenUrl: 'https://api.weixin.qq.com/cgi-bin/token',
             // 默认的获取ticket门票的地址
-            ticketUrl: 'https://api.weixin.qq.com/cgi-bin/ticket/getticket'
+            ticketUrl: 'https://api.weixin.qq.com/cgi-bin/ticket/getticket',
+            // 当前url的协议protocol
+            https: true
         },
         e => {
             // 错误处理逻辑
