@@ -123,6 +123,10 @@ app.use(
             accessTokenUrl: 'https://api.weixin.qq.com/cgi-bin/token',
             // 默认的获取ticket门票的地址
             ticketUrl: 'https://api.weixin.qq.com/cgi-bin/ticket/getticket'
+        },
+        e => {
+            // 错误处理逻辑
+            console.error(e);
         }
     )
 );
@@ -148,7 +152,7 @@ app.listen(8886);
 
 #### options
 
-``` weAccessMiddleware() ``` 接受一个包含以下参数的options对象
+``` weAccessMiddleware() ``` 接收一个包含以下参数的options对象
 
 ##### appId
 
@@ -189,3 +193,7 @@ app.listen(8886);
 * 是否必须：否
 
 * 默认值：https://api.weixin.qq.com/cgi-bin/ticket/getticket
+
+#### errorHandler
+
+``` function errorHandler(e) {} ``` 错误处理函数，接收一个Error实例作为参数
