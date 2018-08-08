@@ -188,7 +188,7 @@ app.listen(8886);
 
 ##### ticketUrl
 
-* 描述：获取ticketUrl门票的接口地址
+* 描述：获取ticket门票的接口地址
 
 * 类型：string
 
