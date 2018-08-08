@@ -5,9 +5,7 @@
 
 import {IWeAccessMidOption} from '../../types/core';
 
-export const defaultWeAccessOption: IWeAccessMidOption = {
-    appId: 'wx6578691d5e747367',
-    appSecret: 'df02847b2eb5b4aa42ff7bb0f9a9cabb',
+export const defaultWeAccessOption = {
     accessTokenUrl: 'https://api.weixin.qq.com/cgi-bin/token',
     ticketUrl: 'https://api.weixin.qq.com/cgi-bin/ticket/getticket'
-};
+} as IWeAccessMidOption;

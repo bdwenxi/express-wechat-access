@@ -14,7 +14,7 @@ import {
     IWeAccessResult
 } from '../types/core';
 
-function weAccessMiddleware(options: Partial<IWeAccessMidOption> = {}, errorHandler = () => {}): IMiddleware {
+function weAccessMiddleware(options: IWeAccessMidOption, errorHandler = () => {}): IMiddleware {
     let mid: IMiddleware = function (req, _res, next) {
         // 协议根据传入的https字段来配
         const protocol = options.https ? 'https' : 'http';
@@ -22,8 +22,8 @@ function weAccessMiddleware(options: Partial<IWeAccessMidOption> = {}, errorHand
         const url = `${protocol}://${req.headers.host}${req.url}`;
         const params = {
             url,
-            appId: options.appId || dftOption.appId,
-            appSecret: options.appSecret || dftOption.appSecret,
+            appId: options.appId,
+            appSecret: options.appSecret,
             accessTokenUrl: options.accessTokenUrl || dftOption.accessTokenUrl,
             ticketUrl: options.ticketUrl || dftOption.ticketUrl
         };

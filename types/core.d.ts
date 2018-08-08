@@ -25,8 +25,8 @@ export interface IWeAccessResult {
 }
 
 export interface IWeAccessMidOption {
-    accessTokenUrl: string,
-    ticketUrl: string,
+    accessTokenUrl?: string,
+    ticketUrl?: string,
     appId: string,
     appSecret: string,
     https?: boolean
