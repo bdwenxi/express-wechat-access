@@ -146,7 +146,7 @@ app.get(
 app.listen(8886);
 ```
 
-## 参数详情
+## API
 
 ### weAccessMiddleware([options], errorHandler)
 
