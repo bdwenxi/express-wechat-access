@@ -1,8 +1,7 @@
 {
     "name": "express-wechat-access",
-    "version": "0.0.1",
-    "description": "",
-    "main": "./dist/index.js",
+    "version": "1.0.0",
+    "description": "A wechat access middleware for expressjs",
     "types": "./types/index.d.ts",
     "scripts": {
         "build": "node scripts/build.js",
@@ -36,5 +35,10 @@
         "rollup-plugin-typescript2": "^0.16.1",
         "tslib": "^1.9.3",
         "typescript": "^2.9.2"
-    }
+    },
+    "files": [
+        "LICENSE",
+        "README.md",
+        "./dist/index.js"
+    ]
 }
