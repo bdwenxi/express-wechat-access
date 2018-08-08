@@ -36,6 +36,7 @@ export interface IWeChatOption extends IWeAccessResult, IWeAccessMidOption {
     url?: string
 }
 
+
 export interface IMiddleware extends EventEmitter {
     (req: any, res: Response | http.ServerResponse, next: NextFunction): any;
 

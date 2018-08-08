@@ -149,6 +149,7 @@ $RECYCLE.BIN/
 *.lnk
 # End of https://www.gitignore.io/api/windows
 .idea/
+dist/
 yarn.lock
 
 .rpt2_cache
