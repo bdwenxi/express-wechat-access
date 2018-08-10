@@ -53,3 +53,4 @@ function weAccessMiddleware(options: IWeAccessMidOption, errorHandler = () => {}
 }
 
 export default weAccessMiddleware;
+module.exports = weAccessMiddleware;

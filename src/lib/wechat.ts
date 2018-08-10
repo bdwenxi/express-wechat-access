@@ -136,3 +136,4 @@ application.getApiTicket = function (options: IWeChatOption) {
 };
 
 export default application;
+module.exports = application;
