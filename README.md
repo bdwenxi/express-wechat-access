@@ -209,3 +209,11 @@ app.listen(8886);
 #### errorHandler
 
 ``` function errorHandler(e) {} ``` 错误处理函数，接收一个Error实例作为参数
+
+## 参考资料
+
+> 以下是微信公众平台的相应文档
+
+1. 微信JS-SDK说明文档：https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141115
+2. 获取access_token：https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140183
+3. 接口测试号申请：https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421137522
