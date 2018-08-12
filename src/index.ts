@@ -31,7 +31,7 @@ function weAccessMiddleware(options: IWeAccessMidOption, errorHandler = () => {}
         mid.getSignatureInfo(params)
             .then(
                 (signatureInfo: IWeAccessResult) => {
-                    // 把微信鉴权的信息注入到request中，便于每个路由获取并注入到对应的hbs模板中
+                    // 把微信鉴权的信息注入到request中，便于每个路由获取并注入到对应的模板中
                     req.weAccessInfo = signatureInfo;
                     next();
                 }
