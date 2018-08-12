@@ -1,6 +1,6 @@
 {
     "name": "express-wechat-access",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "A wechat access middleware for expressjs",
     "types": "./types/index.d.ts",
     "scripts": {
