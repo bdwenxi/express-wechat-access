@@ -4,7 +4,7 @@
  */
 
 // 引入NodeJs基础模块
-import * as crypto from 'crypto';
+import crypto from 'crypto';
 
 /**
  * 创建随机字符串
