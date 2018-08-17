@@ -10,6 +10,13 @@ $ yarn add express-wechat-access
 $ npm install express-wechat-access
 ```
 
+> 注：如果node版本 >= 7.6的话可以直接下载next版本（内部保留async和await API，不会做转换，性能会好一些）
+```
+$ yarn add express-wechat-access@next
+
+$ npm install express-wechat-access@next
+```
+
 ## 引入方式
 
 ```

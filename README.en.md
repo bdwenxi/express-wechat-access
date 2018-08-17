@@ -10,6 +10,13 @@ $ yarn add express-wechat-access
 $ npm install express-wechat-access
 ```
 
+> Note：when your node_version >= 7.6, you can install with @next tag
+```
+$ yarn add express-wechat-access@next
+
+$ npm install express-wechat-access@next
+```
+
 ## How to import
 
 ```
@@ -22,8 +29,7 @@ const weAccessMiddleware = require('express-wechat-access');
 ### Template example
 
 
->
-Note: The current test template engine uses handlebars, you can depending on your project, ejs, jade, etc.
+> Note: The current test template engine uses handlebars, you can depending on your project, ejs, jade, etc.
 
 
 ```
