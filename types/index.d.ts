@@ -11,6 +11,4 @@ declare namespace weAccessMiddleware {
     interface IWeAccessMiddleware extends core.IMiddleware {}
 }
 
-declare module 'express-wechat-access' {
-    export = weAccessMiddleware;
-}
+export = weAccessMiddleware;

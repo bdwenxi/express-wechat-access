@@ -7,7 +7,7 @@ const path = require('path');
 const fs = require('fs');
 const express = require('express');
 const handlebars = require('handlebars');
-const weAccessMiddleware = require('../dist/index');
+const weAccessMiddleware = require('express-wechat-access');
 const app = express();
 
 function getTplStr() {
