@@ -37,7 +37,7 @@ export interface IWeChatOption extends IWeAccessResult, IWeAccessMidOption {
 }
 
 
-export interface IMiddleware extends EventEmitter {
+export interface IMiddleware extends EventEmitter, Function {
     (req: any, res: Response | http.ServerResponse, next: NextFunction): any;
 
     getSignatureInfo(options: IWeChatOption): Promise<IWeAccessResult>;
