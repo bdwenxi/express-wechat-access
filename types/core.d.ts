@@ -36,6 +36,12 @@ export interface IWeChatOption extends IWeAccessResult, IWeAccessMidOption {
     url?: string
 }
 
+export interface ILogErrorInfo {
+    type: string,
+    date: Date,
+    message: string,
+    error?: Error
+}
 
 export interface IMiddleware extends EventEmitter, Function {
     (req: any, res: Response | http.ServerResponse, next: NextFunction): any;

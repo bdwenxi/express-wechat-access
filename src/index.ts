@@ -37,8 +37,8 @@ function weAccessMiddleware(options: IWeAccessMidOption, errorHandler = () => {}
                 }
             )
             .catch(
-                e => {
-                    mid.emit('error', e);
+                logErrorInfo => {
+                    mid.emit('error', logErrorInfo);
                     next();
                 }
             );

@@ -6,6 +6,7 @@ declare function weAccessMiddleware(
 ): core.IMiddleware;
 
 declare namespace weAccessMiddleware {
+
     interface IWeAccessMidOption extends core.IWeAccessMidOption {}
 
     interface IWeAccessMiddleware extends core.IMiddleware {}
