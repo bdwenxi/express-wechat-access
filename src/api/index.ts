@@ -16,12 +16,15 @@ import {ILogErrorInfo} from '../../types/core';
  * @param {IReqTokenParams} params 请求入参
  * @return {Promise<string>}
  */
-export function getTokenReqApi(url: string, params: IReqTokenParams): Promise<string> {
+export function getTokenReqApi(url: string, params: IReqTokenParams, timeout: number): Promise<string> {
     return new Promise(
         (resolve, reject) => {
             request
                 .get(url)
                 .query(params)
+                .timeout({
+                    deadline: timeout
+                })
                 .then(
                     ({body}) => {
                         if (body.errcode) {
@@ -60,12 +63,15 @@ export function getTokenReqApi(url: string, params: IReqTokenParams): Promise<st
  * @param {IReqTicketParams} params 请求入参
  * @return {Promise<string>}
  */
-export function getTicketReqApi(url: string, params: IReqTicketParams): Promise<string> {
+export function getTicketReqApi(url: string, params: IReqTicketParams, timeout: number): Promise<string> {
     return new Promise(
         (resolve, reject) => {
             request
                 .get(url)
                 .query(params)
+                .timeout({
+                    deadline: timeout
+                })
                 .then(
                     ({body}) => {
                         if (body.errcode) {

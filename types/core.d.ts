@@ -29,6 +29,7 @@ export interface IWeAccessMidOption {
     ticketUrl: string,
     appId: string,
     appSecret: string,
+    timeout?: number;
     https?: boolean
 }
 
