@@ -33,7 +33,7 @@
         "@types/merge-descriptors": "^1.0.1",
         "@types/node": "^10.5.2",
         "@types/superagent": "^3.8.3",
-        "express-wechat-access": "^1.0.12",
+        "express-wechat-access": "^1.0.17",
         "memory-cache": "^0.2.0",
         "merge-descriptors": "^1.0.1",
         "superagent": "^3.8.3"

@@ -210,6 +210,26 @@ app.listen(8886);
 
 * Default：false
 
+##### timeout
+
+* 描述：request timeout (ms)
+
+* 类型：number
+
+* 是否必须：否
+
+* 默认值：10000
+
+##### retry
+
+* 描述：request retry times
+
+* 类型：number
+
+* 是否必须：否
+
+* 默认值：3
+
 #### errorHandler
 
 ``` function errorHandler(e) {} ``` Error handling function, receiving an Error instance as a parameter

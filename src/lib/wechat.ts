@@ -81,7 +81,7 @@ application.getAccessToken = async function (options: IWeChatOption): Promise<st
     };
 
     try {
-        accessToken = await getTokenReqApi(options.accessTokenUrl, params, options.timeout!);
+        accessToken = await getTokenReqApi(options.accessTokenUrl, params, options.timeout!, options.retry!);
         cache.put('access-token', accessToken, 7200 * 1000);
         return Promise.resolve(accessToken);
     }
@@ -109,7 +109,7 @@ application.getApiTicket = async function (options: IWeChatOption) {
             access_token: accessToken
         };
 
-        apiTicket = await getTicketReqApi(options.ticketUrl, params, options.timeout!);
+        apiTicket = await getTicketReqApi(options.ticketUrl, params, options.timeout!, options.retry!);
         cache.put('api-ticket', accessToken, 7200 * 1000);
         return Promise.resolve(apiTicket);
     }

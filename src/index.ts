@@ -19,6 +19,7 @@ function weAccessMiddleware(options: IWeAccessMidOption, errorHandler = () => {}
         // 协议根据传入的https字段来配
         const protocol = options.https ? 'https' : 'http';
         const timeout = options.timeout ? options.timeout : 10000;
+        const retry = options.retry ? options.retry : 3;
         // 定义当前的url地址（微信鉴权的时候需要用）
         const url = `${protocol}://${req.headers.host}${req.url}`;
         const params = {
@@ -27,7 +28,8 @@ function weAccessMiddleware(options: IWeAccessMidOption, errorHandler = () => {}
             appSecret: options.appSecret,
             accessTokenUrl: options.accessTokenUrl || dftOption.accessTokenUrl,
             ticketUrl: options.ticketUrl || dftOption.ticketUrl,
-            timeout
+            timeout,
+            retry
         };
 
         mid.getSignatureInfo(params)

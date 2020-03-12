@@ -25,12 +25,13 @@ export interface IWeAccessResult {
 }
 
 export interface IWeAccessMidOption {
-    accessTokenUrl: string,
-    ticketUrl: string,
-    appId: string,
-    appSecret: string,
+    accessTokenUrl: string;
+    ticketUrl: string;
+    appId: string;
+    appSecret: string
     timeout?: number;
-    https?: boolean
+    retry?: number;
+    https?: boolean;
 }
 
 export interface IWeChatOption extends IWeAccessResult, IWeAccessMidOption {

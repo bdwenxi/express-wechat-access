@@ -213,6 +213,26 @@ app.listen(8886);
 
 * 默认值：false
 
+##### timeout
+
+* 描述：接口请求超时时间(ms)
+
+* 类型：number
+
+* 是否必须：否
+
+* 默认值：10000
+
+##### retry
+
+* 描述：接口请求失败重试次数
+
+* 类型：number
+
+* 是否必须：否
+
+* 默认值：3
+
 #### errorHandler
 
 ``` function errorHandler(e) {} ``` 错误处理函数，接收一个Error实例作为参数
