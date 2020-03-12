@@ -1,6 +1,6 @@
 {
     "name": "express-wechat-access",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "description": "A wechat access middleware for expressjs",
     "scripts": {
         "build": "node scripts/build.js",
